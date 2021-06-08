@@ -1,0 +1,330 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+
+body {
+	font-family: Arial, Helvetica, sans-serif, 'Lora', serif, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-image: url(../images/header-img-blur.jpeg);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0 auto;
+	padding: 0 1rem;
+	color: #ffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial, Helvetica, sans-serif, 'Lora', serif, Georgia, Times, "Times New Roman", serif;
+	margin: .5em 0;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+/* Elements
+--------------------------------------------- */
+
+ul, ol {
+	margin: 1em 0;
+	padding: 0 0 0 2.5em;
+}
+
+figure {
+	margin: 2rem auto;
+	text-align: center;
+}
+
+figcaption {
+	font-size: .875rem;
+}
+
+/* Links
+--------------------------------------------- */
+
+a, a:visited {
+	color: rgb(156, 152, 152);
+}
+
+a:hover, a:focus {
+	color: #ffff;
+}
+
+a:focus {
+	color: #ffff;
+}
+
+a:active {
+	color: rgb(248, 145, 145);
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+.site-wrapper {
+	max-width: 75rem;
+	margin: 0 auto;
+}
+
+@media (min-width: 50em) {
+	.site-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.site-header, .site-footer {
+		width: 100%;
+	}
+	.site-main {
+		width: 100%;
+	}
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+
+.site-header {
+	/* background-color: white; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.site-navigation {
+	padding: 0 1rem;
+}
+
+.site-navigation ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.site-navigation a {
+	display: block;
+	padding: 1rem;
+	font-size: 1.25rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* START -- STYLES FOR MOBILE MENU */
+
+/* we will cover this more later */
+
+.site-navigation ul {
+	display: none;
+	position: absolute;
+	top: 8rem;
+	left: 0;
+	right: 0;
+	/* background-color: white; */
+}
+
+.menu-toggle {
+	display: block;
+	background-color: rgba(180, 178, 178, 0.3);
+	border: 0;
+	/* padding: 1rem; */
+}
+
+.menu-toggle:focus {
+	border: 0;
+	outline: 1px dotted;
+}
+
+.site-navigation.toggled ul {
+	display: block;
+}
+
+/* END -- STYLES FOR MOBILE MENU */
+
+@media (min-width: 50em) {
+	.menu-toggle {
+		display: none;
+	}
+	.site-navigation {
+		flex: 1 1 auto;
+		padding: 0 1rem;
+	}
+	.site-navigation ul, .site-navigation.toggled ul {
+		display: flex;
+		justify-content: flex-end;
+		/* START - Remove Mobile Menu Styles */
+		position: relative;
+		top: 0;
+		/* END - Remove Mobile Menu Styles  */
+	}
+	.site-navigation a {
+		line-height: 8rem;
+		/* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
+		padding: 0 1rem;
+	}
+}
+
+/* Main
+--------------------------------------------- */
+
+.site-main .page-header div {
+	display: flex;
+	flex-direction: column;
+}
+
+.site-main .page-header img {
+	display: none;
+}
+
+.site-main .page-header p {
+	line-height: 1.5rem;
+	font-size: 18px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.enter-projects {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+}
+
+.container div figure {
+	border: 1px solid rgba(180, 178, 178, 0.3);
+	box-shadow: 2px 2px 2px rgba(180, 178, 178, 0.3);
+}
+
+@media (min-width: 50em) {
+	.page-header div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 1rem;
+	}
+	.site-main .page-header p {
+		padding: 0 20%;
+		line-height: 2rem;
+	}
+	section .container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.container h3 {
+		text-align: center;
+		margin: 0;
+	}
+	.projects {
+		width: 48%;
+	}
+	.enter-projects {
+		display: flex;
+		flex-direction: row;
+	}
+	.enter-projects figure {
+		width: 50%;
+	}
+	.enter-projects img {
+		height: 220px;
+		object-fit: cover;
+	}
+}
+
+/* Sidebar
+--------------------------------------------- */
+
+/* Footer
+--------------------------------------------- */
+
+.site-footer {
+	/* background-color: white; */
+	text-align: center;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	/* background-color: rgba(180, 178, 178, 0.3); */
+}
+
+.site-footer p {
+	margin: 0;
+	padding-top: 0.5rem;
+}
+
+.footer-img {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.footer-img img {
+	width: 35px;
+}
+
+@media (min-width: 50em) {
+	.site-footer {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		margin: 0;
+	}
+	.site-footer>div {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+	}
+	.site-footer p {
+		width: 40%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer-img {
+		display: flex;
+		flex-direction: row;
+		align-self: center;
+	}
+	.footer-img img {
+		margin: 10px;
+		width: 30px;
+	}
+}

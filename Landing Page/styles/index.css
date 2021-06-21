@@ -22,9 +22,11 @@
 
 /* Typography
 --------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,700&display=swap');
+
 
 body {
-	font-family: Arial, Helvetica, sans-serif, 'Lora', serif, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif, 'Lora', serif, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -39,7 +41,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Arial, Helvetica, sans-serif, 'Lora', serif, Georgia, Times, "Times New Roman", serif;
+	font-family: 'Roboto', sans-serif, 'Lora', serif, Georgia, Times, "Times New Roman", serif;
 	margin: .5em 0;
 }
 
@@ -74,6 +76,10 @@ figcaption {
 
 /* Links
 --------------------------------------------- */
+
+a {
+	text-decoration: none;
+}
 
 a, a:visited {
 	color: rgb(156, 152, 152);
@@ -128,6 +134,10 @@ a:active {
 	justify-content: space-between;
 }
 
+.site-header img {
+	width: 60px;
+}
+
 .site-navigation {
 	padding: 0 1rem;
 }
@@ -151,14 +161,14 @@ a:active {
 
 /* we will cover this more later */
 
-.site-navigation ul {
+/* .site-navigation ul {
 	display: none;
 	position: absolute;
 	top: 8rem;
 	left: 0;
 	right: 0;
 	/* background-color: white; */
-}
+} */
 
 .menu-toggle {
 	display: block;
@@ -204,18 +214,18 @@ a:active {
 /* Main
 --------------------------------------------- */
 
-.site-main .page-header div {
-	display: flex;
-	flex-direction: column;
+.page-header div {
+	padding: 3rem 2rem 2rem 2rem;
 }
 
-.site-main .page-header img {
-	display: none;
+.page-header h2 {
+	text-align: center;
 }
 
-.site-main .page-header p {
+.page-header p {
 	line-height: 1.5rem;
 	font-size: 18px;
+	width: 100%;
 }
 
 .container {
@@ -236,14 +246,18 @@ a:active {
 	box-shadow: 2px 2px 2px rgba(180, 178, 178, 0.3);
 }
 
+capfigure {
+	padding: 1rem;
+	font-size: larger;
+}
+
 @media (min-width: 50em) {
 	.page-header div {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 1rem;
+		width: 100%;
+		padding: 5rem;
 	}
-	.site-main .page-header p {
+
+	.page-header p {
 		padding: 0 20%;
 		line-height: 2rem;
 	}
@@ -263,17 +277,15 @@ a:active {
 		display: flex;
 		flex-direction: row;
 	}
-	.enter-projects figure {
+	.enter-projects a {
 		width: 50%;
+		height: auto;
 	}
 	.enter-projects img {
 		height: 220px;
 		object-fit: cover;
 	}
 }
-
-/* Sidebar
---------------------------------------------- */
 
 /* Footer
 --------------------------------------------- */

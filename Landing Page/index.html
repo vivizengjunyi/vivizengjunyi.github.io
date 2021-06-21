@@ -5,10 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Landing Paper</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="./images/LandingPage.png">
 	<link rel="stylesheet" href="styles/normalize-fwd.css">
 	<link rel="stylesheet" href="styles/index.css">
 </head>
@@ -18,24 +15,24 @@
 
 		<header class="site-header">
 
-			<h2>Junyi Zeng</h1>
+			<img src="./images/LandingPage.png" alt="personal logo">
 
-			<nav class="site-navigation" id="site-navigation">
+				<nav class="site-navigation" id="site-navigation">
 
-				<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false">
-					<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-						<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
-					</svg>
-				</button>
+					<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false">
+						<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+							<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+						</svg>
+					</button>
 
-				<ul class="nav-menu" id="header-menu">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="porfolio.html">PORFOLIO</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
-				</ul>
+					<ul class="nav-menu" id="header-menu">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="portfolio.html">PORTFOLIO</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
 
-			</nav>
+				</nav>
 
 		</header>
 
@@ -43,33 +40,32 @@
 
 			<header class="page-header">
 				<div>
-					<img src="../images/header-img.jpeg
-					" alt="coding">
-					<div>
-						<h2>About Me</h2>
-						<P>Hello, I am Junyi(Vivi) Zeng. I used to be an HR in IT industry. With passion and
-							curiousness about technology, I changed my career to be a web developer. Please take a look
-							at
-							my projects!</p>
-					</div>
-
+					<h2>About Me</h2>
+					<P>Hello, I am Junyi(Vivi) Zeng. I used to be an HR in IT industry. With passion and
+						curiousness about technology, I changed my career to be a web developer. Please take a look
+						at
+						my projects!</p>
 				</div>
 			</header>
 
 			<section>
-				<h2>Porfolio</h2>
+				<h2>Portfolio</h2>
 				<div class="container">
 					<div class="projects">
 						<h3>HTML/CSS Projects</h3>
 						<div class="enter-projects" onclick="enterProjects()">
-							<figure>
-								<img src="images/porfolio-img-1.jpeg">
-								<capfigure>Country Website</capfigure>
-							</figure>
-							<figure>
-								<img src="images/porfolio-img-2.jpeg">
-								<capfigure>Group Project</capfigure>
-							</figure>
+							<a href="./Country Website/index.html" title="country website">
+								<figure>
+									<img src="images/country-website-screenshot.png">
+									<capfigure>Country Website</capfigure>
+								</figure>
+							</a>
+							<a>
+								<figure>
+									<img src="images/porfolio-img-2.jpeg">
+									<capfigure>Group Project</capfigure>
+								</figure>
+							</a>
 						</div>
 					</div>
 

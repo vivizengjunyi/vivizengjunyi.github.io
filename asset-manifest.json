@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.bf91b3bf.chunk.css",
-    "main.js": "/static/js/main.c643bf00.chunk.js",
-    "main.js.map": "/static/js/main.c643bf00.chunk.js.map",
+    "main.js": "/static/js/main.fe80f7e6.chunk.js",
+    "main.js.map": "/static/js/main.fe80f7e6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d22d456c.js",
     "runtime-main.js.map": "/static/js/runtime-main.d22d456c.js.map",
     "static/js/2.afb0363f.chunk.js": "/static/js/2.afb0363f.chunk.js",
@@ -20,12 +20,12 @@
     "static/media/portfolio-me.2a2fc324.jpg": "/static/media/portfolio-me.2a2fc324.jpg",
     "static/media/portfolio-three-device.cefeeb0f.png": "/static/media/portfolio-three-device.cefeeb0f.png",
     "static/media/portfolio-video.d6ca3eed.mp4": "/static/media/portfolio-video.d6ca3eed.mp4",
-    "static/media/weather-forecast.62ed5199.png": "/static/media/weather-forecast.62ed5199.png"
+    "static/media/weather-device.3e7e4c8e.png": "/static/media/weather-device.3e7e4c8e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d22d456c.js",
     "static/js/2.afb0363f.chunk.js",
     "static/css/main.bf91b3bf.chunk.css",
-    "static/js/main.c643bf00.chunk.js"
+    "static/js/main.fe80f7e6.chunk.js"
   ]
 }

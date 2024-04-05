@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.bf91b3bf.chunk.css",
-    "main.js": "/static/js/main.1355f101.chunk.js",
-    "main.js.map": "/static/js/main.1355f101.chunk.js.map",
+    "main.js": "/static/js/main.fc29db13.chunk.js",
+    "main.js.map": "/static/js/main.fc29db13.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d22d456c.js",
     "runtime-main.js.map": "/static/js/runtime-main.d22d456c.js.map",
     "static/js/2.afb0363f.chunk.js": "/static/js/2.afb0363f.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/2.afb0363f.chunk.js.LICENSE.txt": "/static/js/2.afb0363f.chunk.js.LICENSE.txt",
     "static/media/capstone-three-device.fc3fc2f4.png": "/static/media/capstone-three-device.fc3fc2f4.png",
     "static/media/capstone-video.74453094.mp4": "/static/media/capstone-video.74453094.mp4",
-    "static/media/chatbotai.c1541b9c.png": "/static/media/chatbotai.c1541b9c.png",
+    "static/media/chatbotai-device.5aa28983.png": "/static/media/chatbotai-device.5aa28983.png",
     "static/media/match-color-theme-logo.85aa2527.png": "/static/media/match-color-theme-logo.85aa2527.png",
     "static/media/movie-three-device.361ec2ae.png": "/static/media/movie-three-device.361ec2ae.png",
     "static/media/movie-video.4be17b6b.mp4": "/static/media/movie-video.4be17b6b.mp4",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.d22d456c.js",
     "static/js/2.afb0363f.chunk.js",
     "static/css/main.bf91b3bf.chunk.css",
-    "static/js/main.1355f101.chunk.js"
+    "static/js/main.fc29db13.chunk.js"
   ]
 }
